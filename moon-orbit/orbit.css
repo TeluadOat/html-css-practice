@@ -35,7 +35,7 @@ body {
     height: 200px;
     position: absolute;
     transform: translate(-50%, -50%);
-    animation: orbit 5s linear infinite;
+    animation: orbit 100s linear infinite;
 }
 
 .moon {
