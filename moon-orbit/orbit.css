@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.space {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.earth {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orbit {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: orbit 5s linear infinite;
+}
+
+.moon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(183, 187, 191);
+    box-shadow: 0 0 8px white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0) translate(-50%, -50%);
+    }
+
+    100% {
+        transform: rotate(360deg) translate(-50%, -50%)
+    }
+}
