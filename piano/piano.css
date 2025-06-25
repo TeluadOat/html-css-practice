@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#piano {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: hsl(120, 75%, 15%);
+    height: 7.3rem;
+    width: 18rem;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    padding: 0.5rem;
+    border-radius: 3px;
+}
+
+#product {
+    font-size: 0.7rem;
+    position: absolute;
+    left: 0.35rem;
+    align-self: flex-start;
+    color: aliceblue;
+}
+
+.keys {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+div[class~="key"] {
+    position: relative;
+    width: 1.2rem;
+    height: 4.5rem;
+    border: 0.016rem solid rgb(42, 39, 39);
+    background-color: aliceblue;
+    border-radius: 0 0 2px 2px;
+    box-shadow: 0 2px 2px rgb(35, 32, 32);
+}
+
+div[class="key"]:hover {
+    transform: translateY(1px);
+    box-shadow: 0 0 0 #999;
+}
+
+div[class~="key"]>div {
+    position: absolute;
+    height: 2.6rem;
+    width: 0.7rem;
+    background-color: rgb(27, 26, 26);
+    right: 0.78rem;
+}
