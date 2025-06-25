@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+body {
+    background-color: aqua;
+    font-size: 1rem;
+    background-color: #f5c043;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: linear-gradient(rgb(225, 240, 248) 10%, rgb(128, 190, 221) 100%);
+}
+
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+th {
+    padding: 0.5rem;
+}
+
+td {
+    text-align: center;
+    padding: 0.4rem;
+}
+
+tr[class="read"] {
+    background-image: linear-gradient(rgb(157, 245, 157) 10%, rgb(57, 237, 57) 100%);
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(rgb(234, 222, 222), rgb(241, 232, 232));
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(rgb(245, 230, 207) 10%, #f3c28d 100%);
+}
+
+span {
+    display: inline-block;
+}
+
+span[class="status"] {
+    border-radius: 20%/60%;
+}
+
+span[class="status"],
+span[class^="rate"] {
+    height: 1.8rem;
+    width: 6em;
+    padding: 0.3rem;
+}
+
+tr[class="to-read"] span[class="status"] {
+    border: 0.1em solid rgb(201, 52, 52);
+    background-image: linear-gradient(hsl(5, 100%, 75%), hsl(5, 100%, 50%));
+}
+
+tr[class="read"] span[class="status"] {
+    border: 0.1em solid rgb(66, 160, 67);
+    background-image: linear-gradient(hsl(128, 100%, 75%), hsl(133, 100%, 50%));
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 0.1em solid rgb(201, 52, 52);
+    background-image: linear-gradient(hsl(45, 100%, 75%), hsl(46, 100%, 50%));
+}
+
+span[class^="rate"] span {
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid rgb(157, 152, 152);
+    border-radius: 50%;
+    margin: 0 0.1rem;
+    background-color: rgb(239, 239, 217);
+}
+
+span[class~="one"] :first-child {
+    background-image: linear-gradient(#f5c043);
+}
+
+span[class~="two"] :nth-child(1),
+span[class~="two"] :nth-child(2) {
+    background-image: linear-gradient(#f5c043);
+}
+
+span[class~="three"] span {
+    background-image: linear-gradient(#f5c043);
+}
