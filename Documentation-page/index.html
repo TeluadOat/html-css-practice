@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="documentation.css">
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <header id="head-nav">
+        <nav>
+            <h1>INFORMATIONS</h1>
+            <ul>
+                <li><a href="#SUMMARY">SUMMARY</a></li>
+                <li><a href="#PERSONAL_INFORMATION">PERSONAL INFORMATION</a></li>
+                <li><a href="#EDUCATION">EDUCATION</a></li>
+                <li><a href="#EXPERIENCE">EXPERIENCE</a></li>
+                <li><a href="#SKILLS_AND_COMPETENCES">SKILLS AND COMPETENCES</a></li>
+                <li><a href="#REFEREES">REFEREES</a></li>
+                <li><a href="#Introduction_to_JavaScript">Introduction to JavaScript</a></li>
+                <li><a href="#Hello_World">Hello World</a></li>
+                <li><a href="#Variable_Declaration">Variable Declaration</a></li>
+                <li><a href="#Variable_Scope">Variable Scope</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main-doc">
+        <section id="SUMMARY" class="main-section">
+            <header>SUMMARY</header>
+            <p class="shift">A goal-oriented and highly motivated First-Class graduate with strong adaptability,
+                excellent analytical
+                and critical thinking skills, effective time management, and a collaborative mindset. Passionate about
+                driving innovative financial solutions and committed to building a career in the financial and economic
+                sector. Eager to contribute energy, curiosity, and a strong commitment to excellence to the Graduate
+                Trainee Programme.</p>
+        </section>
+        <section id="PERSONAL_INFORMATION" class="main-section">
+            <header>PERSONAL INFORMATION</header>
+            <ul>
+                <li>Date of Birth: July 16, 2000</li>
+                <li>Gender: Male</li>
+                <li>State of Origin: Ondo</li>
+                <li>NYSC year Completed: 2025 (March)</li>
+            </ul>
+        </section>
+        <section id="EDUCATION" class="main-section">
+            <header>EDUCATION</header>
+            <p class="sift"><span class="bold">University of Benin</span> | <span>B.Ag. in Agricultural Economic</span>
+            </p>
+            <p class="shift">First Class Honors</p>
+        </section>
+        <section id="EXPERIENCE" class="main-section">
+            <header>EXPERIENCE</header>
+            <p><span class="bold">Research Assistant (NYSC)</span></p>
+            <p>Department of Banking and Finance</p>
+            <p>Michael Okpara University of Agriculture</p>
+            <ul>
+                <li>Performed administrative duties including filing, photocopying, and managing correspondence.</li>
+                <li>Assisted faculty members with research projects, data collection, and literature reviews.</li>
+                <li>Analyzed financial data and prepared reports for academic publications and presentations.</li>
+                <li>Managed and updated research databases and departmental records.</li>
+            </ul>
+        </section>
+        <section id="SKILLS_AND_COMPETENCES" class="main-section">
+            <header>SKILLS AND COMPETENCES</header>
+            <ul>
+                <li>Customer Service & Communication</li>
+                <li>Problem-Solving & Critical Thinking</li>
+                <li>Microsoft Office Proficiency </li>
+                <li>Programming Language - Javascript (Basic)</li>
+            </ul>
+        </section>
+        <section id="REFEREES" class="main-section">
+            <header>REFEREES</header>
+            <p>Available on request</p>
+        </section>
+        <section id="Introduction_to_JavaScript" class="main-section">
+            <header>Introduction to JavaScript</header>
+            <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight
+                language. Inside a host environment (for example, a web browser), JavaScript can be connected to the
+                objects of its environment to provide programmatic control over them.</p>
+            <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of
+                language elements such as operators, control structures, and statements.</p>
+        </section>
+        <section id="Hello_World" class="main-section">
+            <header>Hello world</header>
+            <p>To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript
+                code:</p>
+            <code>function greetMe(yourName) { alert("Hello " + yourName); }greetMe("World");
+                </code>
+            <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
+        </section>
+        <section id="Variable_Declaration" class="main-section">
+            <header>Variable Declaration</header>
+            <p>You can declare a variable in three ways:</p>
+            <p>With the keyword var. For example,</p>
+            <code>var x = 42</code>
+            <p>This syntax can be used to declare both local and global variables.</p>
+            <p>By simply assigning it a value. For example,</p>
+            <code>x = 42.</code>
+        </section>
+        <section id="Variable_Scope" class="main-section">
+            <header>Variable Scope</header>
+            <p>When you declare a variable outside of any function, it is called a global variable, because it is
+                available to any other code in the current document. When you declare a variable within a function, it
+                is called a local variable, because it is available only within that function.</p>
+            <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within
+                a block is local to the function (or global scope) that the block resides within. For example the
+                following code will log 5, because the scope of x is the function (or global context) within which x is
+                declared, not the block, which in this case is an if statement.</p>
+            <code>if (true) { var x = 5; } console.log(x); // 5</code>
+            <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015.</p>
+            <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+not defined</code>
+        </section>
+    </main>
+    </main>
+</body>
+
+</html>
